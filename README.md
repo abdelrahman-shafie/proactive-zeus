@@ -1,4 +1,4 @@
-### **Team: **
+### Team:
 1. Abdelrahman Ihab Shafie 2206183
 2. Yassin Amr 2206190
 3. Aly Waleed 22010443
