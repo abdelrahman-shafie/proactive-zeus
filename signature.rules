@@ -1,0 +1,4 @@
+alert http any any -> any any (msg:"Zeus C2 Communication Detected"; content:"/gate.php"; http_uri; sid:100001; rev:1;)
+alert dns any any -> any any (msg:"Zeus DNS Query Detected"; content:"zeus-banking-malware.com"; nocase; sid:100002; rev:1;)
+alert http any any -> any any (msg:"Zeus Suspicious POST Request"; content:"POST"; http_method; content:"User-Agent|3A| Mozilla/4.0"; sid:100003; rev:1;)
+alert tls any any -> 192.168.138.128 any (msg:"Zeus HTTPS C2 Detected"; sid:100004; rev:1;)
